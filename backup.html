@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+        <style>
+            table, th, td {
+            border: 1px solid;
+            padding: 3px 7px 3px 7px;
+            border-collapse: collapse;
+            text-align: center;
+            }
+
+            /* tr.tb-odd {
+                background-color: yellow;
+            } */
+
+            a.song-link:link, a.song-link:visited {
+                color: #2980B9;
+
+            }
+            a.song-link:hover, a.song-link:active {
+                background-color: #DDDDFF;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Website created as demonstration for ISOM3400 LA1, Spring 24/25.-->
+        
+        <h1>Hello world!</h1>
+        <p id="intro">
+            This is a demo website on HTML. Let me show you around!
+            <br>
+            This website is made up of lots of HTML elements. An element is defined by its start tag, end tag, and content sandwiched in between.
+        </p>
+        <div>
+            <img src="./element_example.png" title = "Example of a tag" style="width: 300px">
+        </div>
+        <p id="second">
+            The "Hello world!" at the top is a header (<code>&lt;h1&gt;</code>)! It is the biggest header offered. You will see headers of other sizes around.
+            <br>
+            Meanwhile, this text and the previous is a paragraph (<code>&lt;p&gt;</code>).
+            <br>
+            The diagram that you see above is an image (<code>&lt;img&gt;</code>)~
+        </p>
+        <!-- Oh, you found me~ I am a comment! I do not affect the site. -->
+
+
+        <h2 id="eles">HTML Elements</h2>
+        <p>To create lists, you can use</p>
+        <ol>
+            <li><code>&lt;ol&gt;</code> to define an ordered (numbered) list, or</li>
+            <li><code>&lt;ul&gt;</code> to define an unordered list.</li>
+        </ol>
+
+        <p>
+            Within each list, you can then nest <code>&lt;li&gt;</code> elements to specify the actual list items.
+            It is not a must to use the <code>&lt;ul&gt;</code> for unordered lists, but it may look different.
+            <br>
+            <br>
+            Let me quickly list out some other common elements!
+        </p>
+        <ul>
+            <li>Headers, from largest to smallest:</li>
+            <ol>
+                <li><code>&lt;h1&gt;</code></li>
+                <li><code>&lt;h2&gt;</code></li>
+                <li><code>&lt;h3&gt;</code></li>
+                <li><code>&lt;h4&gt;</code></li>
+                <li><code>&lt;h5&gt;</code></li>
+                <li><code>&lt;h6&gt;</code></li>
+            </ol>
+            <li>Paragraph: <code>&lt;p&gt;</code></li>
+            <li>Line Break: <code>&lt;br&gt;</code> (closing tag <code>&lt;/br&gt;</code> not needed)</li>
+            <li>Division/Section: <code>&lt;div&gt;</code></li>
+            <li>Anchor (hyperlink): <code>&lt;a&gt;</code></li>
+            <li>Image: <code>&lt;img&gt;</code></li>
+        </ul>
+
+        <div id="table-elements">
+            <h3>Table elements</h3>
+            <p>In HTML, a table is made up of a few parts:</p>
+            <ul>
+                <li><code>&lt;table&gt;</code> defines the table</li>
+                <li><code>&lt;tr&gt;</code> defines a row</li>
+                <li><code>&lt;td&gt;</code> defines a cell</li>
+                <li><code>&lt;th&gt;</code> defines a header cell</li>
+            </ul>
+            
+        
+
+            <p>As an example, let me show you some songs I like!</p>
+            <table id="nice-music">
+                <tr class="tb-header">
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Language</th>
+                    <th>YouTube Link</th>
+                </tr>
+                <tr class="tb-odd">
+                    <td class="song-title">Home</td>
+                    <td class="artist british">Cavetown</td>
+                    <td class="lang">English</td>
+                    <td class="link"><a class="song-link" href="https://www.youtube.com/watch?v=2APLh8_ExU0">https://www.youtube.com/watch?v=2APLh8_ExU0</a></td>
+                </tr>
+                <tr class="tb-even">
+                    <td class="song-title">ロストワンの号哭</td>
+                    <td class="artist japanese">Neru</td>
+                    <td class="lang">Japanese</td>
+                    <td class="link"><a class="song-link" href="https://www.youtube.com/watch?v=8oBV3jPTW4s" target=”_blank”>https://www.youtube.com/watch?v=8oBV3jPTW4s</a></td>
+                </tr>
+                <tr class="tb-odd">
+                    <td class="song-title">I Can't Help But Wonder</td>
+                    <td class="artist american">Jorge Rivera-Herrans (EPIC)</td>
+                    <td class="lang">English</td>
+                    <td class="link"><a class="song-link" href="https://www.youtube.com/watch?v=FBfT0E6oF6I" target=”_blank”>https://www.youtube.com/watch?v=FBfT0E6oF6I</a></td>
+                </tr>
+                <tr class="tb-even">
+                    <td class="song-title">一世同學</td>
+                    <td class="artist hongkonger">林奕匡</td>
+                    <td class="lang">Cantonese</td>
+                    <td class="link"><a class="song-link" href="https://www.youtube.com/watch?v=OVGpdVrP5oc" target=”_blank”>https://www.youtube.com/watch?v=OVGpdVrP5oc</a></td>
+                </tr>
+                <tr class="tb-odd">
+                    <td class="song-title">Defying The Distance</td>
+                    <td class="artist american">8eyes</td>
+                    <td class="lang">English</td>
+                    <td class="link"><a class="song-link" href="https://www.youtube.com/watch?v=6Bb9L3ITgq8" target=”_blank”>https://www.youtube.com/watch?v=6Bb9L3ITgq8</a></td>
+                </tr>
+                <tr class="tb-even">
+                    <td class="song-title">Fireflies</td>
+                    <td class="artist american">Owl City</td>
+                    <td class="lang">English</td>
+                    <td class="link"><a class="song-link" href="https://www.youtube.com/watch?v=psuRGfAaju4" target=”_blank”>https://www.youtube.com/watch?v=psuRGfAaju4</a></td>
+                    <!-- <td class="link"><a class="song-link" href="https://www.youtube.com/watch?v=9NcPvmk4vfo" target=”_blank”>https://www.youtube.com/watch?v=psuRGfAaju4</a></td> -->
+
+                </tr>
+            </table>
+        </div>
+        <footer style="padding: 20px"></footer>
+    </body>
+</html>
